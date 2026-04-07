@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "#*": ["src/*"],
+            // "#components/*": ["components/*"],
+            // "#constants/*": ["constants/*"],
+            // "#store/*": ["store/*"],
+            // "#hoc/*": ["hoc/*"],
+            // "#windows/*": ["windows/*"]
+        }
+    },
+    "include": ["src"]
+}
+
+
+// incase it doesnt work in the future versions
+
+// {
+//   "compilerOptions": {
+//     "paths": {
+//       "@/*": ["src/*"]
+//     }
+//   }
+// }
+
+// and import it like this
+
+// import Button from "@/components/Button";
