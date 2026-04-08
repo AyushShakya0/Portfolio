@@ -3,8 +3,12 @@ import { useGSAP } from '@gsap/react';
 import React, { useRef } from 'react';
 import { Tooltip } from 'react-tooltip';
 import gsap from 'gsap';
+import useWindowStore from '#store/window';
+
 
 const Dock = () => {
+
+    const {openWindow, closeWindow, focusWindow, windows}=useWindowStore();
 
     const dockRef = useRef();
 
@@ -38,7 +42,7 @@ const Dock = () => {
             animateIcons(e.clientX - left);
         };
 
-        const resetIcons = () => icons.forEach((icon) = gsap.to(icon, {
+        const resetIcons = () => icons.forEach((icons) = gsap.to('icon', {
             scale: 1,
             y: 0,
             duration: 0.3,
@@ -56,7 +60,25 @@ const Dock = () => {
 
     }, [])
 
-    const toggleApp = (app)=>{};
+    const toggleApp = (app)=>{
+        if(!app.canOpen) return;
+
+        const window = windows[app.id];
+
+        if(!window){
+            console.error(`Window not found for app : ${app.id}`)
+            return;
+        }
+
+        if(window.isOpen){
+            closeWindow(app.id);
+
+        }else{
+            openWindow(app.id);
+        }
+
+        console.log(windows);
+    };
 
 
 
