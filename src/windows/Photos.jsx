@@ -1,5 +1,5 @@
 import { WindowControls } from '#components'
-import { gallery } from '#constants'
+import { gallery, photosLinks } from '#constants'
 import WindowWrapper from '#hoc/WindowWrapper'
 import { Mail, Search } from 'lucide-react'
 import React from 'react'
