@@ -4,7 +4,7 @@ import gsap from 'gsap';
 import { Draggable, ScrollTrigger,SplitText } from 'gsap/all'
 
 import { Navbar, Welcome, Dock } from '#components'
-import { Terminal } from '#windows';
+import { Terminal, Safari } from '#windows';
 
 gsap.registerPlugin(Draggable,ScrollTrigger,SplitText);
 
@@ -17,6 +17,7 @@ const App = () => {
         <Dock/>
 
         <Terminal/>
+        <Safari/>
     </main>
   )
 }
