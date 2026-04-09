@@ -14,7 +14,7 @@ const Contact = () => {
     </div>
 
     <div className="p-5 space-y-5">
-        <img src="/images/adrian.jpg" alt="Ayush" className='w-20 rounded-full' />
+        <img src="/images/me.jpeg" alt="Ayush" className='w-48 h-48 rounded-full object-cover' style={{ objectPosition: "center 30%" }} />
     </div>
 
     {/* <h3>If it matters, I’m interested. Let’s connect.”</h3> */}

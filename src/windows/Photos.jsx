@@ -36,7 +36,7 @@ const Photos = () => {
                     </ul>
                 </div>
 
-                <div className="gallery">
+                <div className="gallery ">
                     <ul>
                         {gallery.map(({ id, img }) => (
                             <li key={id}
@@ -52,11 +52,13 @@ const Photos = () => {
                                     {/* need to update this part later */ }
                                 }}>
 
-                                <img src={img} alt={`Gallery Image ${id}`} />
+                                <img src={img} alt={`Gallery Image ${id}`} className='w-48 h-48 rounded-full object-cover' style={{ objectPosition: "center 20%" }} />
 
                             </li>
                         ))}
                     </ul>
+
+                    {/* <video src="/videos/output.mp4" muted playsInline preload="auto" /> */}
                 </div>
             </div>
 

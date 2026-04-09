@@ -4,7 +4,7 @@ import gsap from 'gsap';
 import { Draggable, ScrollTrigger,SplitText } from 'gsap/all'
 
 import { Navbar, Welcome, Dock, Home } from '#components'
-import { Terminal, Safari,Resume,Finder,Text,Image,Contact,Photos } from '#windows';
+import { Terminal, Safari,Resume,Finder,Text,Image,Video,Contact,Photos } from '#windows';
 
 gsap.registerPlugin(Draggable,ScrollTrigger,SplitText);
 
@@ -22,13 +22,10 @@ const App = () => {
         <Finder/>
         <Text/>
         <Image/>
+        <Video/>
         <Contact/>
         <Home/>
         <Photos/>
-
-        
-
-        
 
     </main>
   )
