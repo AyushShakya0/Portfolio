@@ -5,7 +5,7 @@
 /* Dark Mode CSS Variables */
 :root[data-theme="light"] {
   --bg-primary: rgb(255, 255, 255);
-  --bg-secondary: rgba(255, 255, 255, 0.5);
+  --bg-secondary: rgba(255, 255, 255, 0.3);
   --text-primary: rgb(0, 0, 0);
   --text-secondary: rgb(107, 114, 128);
   --border-color: rgb(229, 231, 235);
@@ -14,7 +14,7 @@
 
 :root[data-theme="dark"] {
   --bg-primary: rgb(30, 30, 30);
-  --bg-secondary: rgba(30, 30, 30, 0.5);
+  --bg-secondary: rgba(30, 30, 30, 0.3);
   --text-primary: rgb(255, 255, 255);
   --text-secondary: rgb(156, 163, 175);
   --border-color: rgb(55, 65, 81);
@@ -26,7 +26,8 @@ body {
   width: 100dvw;
   overflow: hidden;
   height: 100dvh;
-  background-image: url("/images/wallpaper.png");
+  /* background-image: url("/images/wallpaper.png"); */
+  background-image: url("/images/macOS-wallpaper.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -109,7 +110,7 @@ body {
 
   #welcome {
     @apply flex flex-col justify-center items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 select-none max-sm:h-screen max-sm:w-full max-sm:px-10 transition-colors duration-300;
-    color: var(--text-secondary);
+    color: rgb(255, 255, 255);
 
     .small-screen {
       @apply sm:hidden m-7 backdrop-blur-lg p-3 rounded-md absolute top-10 transition-colors duration-300;
@@ -117,7 +118,8 @@ body {
 
       p {
         @apply flex-1 text-[16px] text-center font-roboto;
-        color: var(--text-secondary);
+        color: rgba(255, 255, 255);
+
       }
     }
   }
