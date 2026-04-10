@@ -271,7 +271,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-80",
-      windowPosition: "top-[20vh] left-7",
+      windowPosition: "top-[25vh] left-5",
       children: [
         {
           id: 1,
@@ -315,7 +315,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
-      windowPosition: "top-[33vh] left-7",
+      windowPosition: "top-[45vh] left-5",
       children: [
         {
           id: 1,
@@ -358,6 +358,49 @@ const WORK_LOCATION = {
           position: "top-52 right-40",
           videoUrl: "/videos/output.mp4",
         },
+
+      ],
+    },
+        // ▶ Project 4
+    {
+      id: 7,
+      name: "NoteTaker",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-60 left-50",
+      windowPosition: "top-[65vh] left-5",
+      children: [
+        {
+          id: 1,
+          name: "NoteTaker.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "A simple Note Taking app built with TypeScript.",
+            "Not much to see i just wanted to try TypeScript"
+            
+          ],
+        },
+        {
+          id: 2,
+          name: "NoteTaker.com",
+          icon: "/images/NoteTaker.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://note-taking-crud-sigma.vercel.app/",
+          position: "top-10 right-20",
+        },
+        {
+          id: 4,
+          name: "NoteTaker.png",
+          icon: "/images/NoteTaker.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 right-80",
+          imageUrl: "/images/NoteTaker.png",
+        }
 
       ],
     },
