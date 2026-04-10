@@ -2,9 +2,13 @@ import {WindowControls} from '#components'
 import { techStack } from '#constants'
 import WindowWrapper from '#hoc/WindowWrapper'
 import { Check, Flag } from 'lucide-react'
+import useThemeStore from '#store/theme'
 import React from 'react'
 
 const Terminal = () => {
+    const { theme } = useThemeStore();
+    const flagColor = theme === 'dark' ? 'white' : 'black';
+    const textColor = theme === 'dark' ? '#ffffff' : '#000000';
 
     console.log(techStack);
     return (
@@ -45,8 +49,8 @@ const Terminal = () => {
                     <p>
                         <Check size={20} /> 5 of 5 stacks loaded successfully (100%)
                     </p>
-                    <p className='text-black'>
-                        <Flag size={15} fill="black" />
+                    <p style={{ color: textColor }}>
+                        <Flag size={15} fill={flagColor} stroke={flagColor} />
                         Render time : 6ms
                     </p>
                 </div>

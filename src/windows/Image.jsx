@@ -19,7 +19,7 @@ const Image = () => {
                 <h2>{name}</h2>
             </div>
 
-            <div className='p-5 bg-white'>
+            <div className='p-5' style={{backgroundColor: 'var(--bg-primary)'}}>
                 {imageUrl ? (
                     <div className='w-full'>
                         <img src={imageUrl} alt={name} className='w-full h-auto max-h-[70vh] object-contain rounded' />

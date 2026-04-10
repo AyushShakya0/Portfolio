@@ -253,7 +253,7 @@ const WORK_LOCATION = {
           position: "top-10 right-20",
         },
         {
-          id: 4,
+          id: 3,
           name: "mojito.png",
           icon: "/images/mojito-page.png",
           kind: "file",
@@ -297,7 +297,7 @@ const WORK_LOCATION = {
           position: "top-20 left-20",
         },
         {
-          id: 4,
+          id: 3,
           name: "Movie26.png",
           icon: "/images/Movie26-page.png",
           kind: "file",
@@ -341,7 +341,7 @@ const WORK_LOCATION = {
           position: "top-10 right-20",
         },
         {
-          id: 4,
+          id: 3,
           name: "food-delivery-app.png",
           icon: "/images/gofood-logo.png",
           kind: "file",
@@ -363,7 +363,7 @@ const WORK_LOCATION = {
     },
         // ▶ Project 4
     {
-      id: 7,
+      id: 8,
       name: "NoteTaker",
       icon: "/images/folder.png",
       kind: "folder",
