@@ -65,7 +65,7 @@ const Finder = () => {
 
                 <ul className='content'>
                     {activeLocation?.children.map((item) => (
-                        <li key={item.id} className={item.position} onClick={() => openItem(item)}>
+                        <li key={item.id} className={item.position} onDoubleClick={() => openItem(item)}>
                             <img src={item.icon} alt={item.name} />
                             <p>{item.name}</p>
 
