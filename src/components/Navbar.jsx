@@ -1,23 +1,33 @@
 import React from 'react'
 import dayjs from 'dayjs'
 
-import { navLinks,navIcons } from '#constants'
+import { navLinks, navIcons, navIcons_white } from '#constants'
 import useWindowStore from '#store/window'
 import useThemeStore from '#store/theme'
 
 const Navbar = () => {
 
-    const {openWindow} = useWindowStore();
-    const {toggleTheme} = useThemeStore();
+    const { theme } = useThemeStore();
+
+    const themedNavIcons =
+        theme === 'dark' ? navIcons_white : navIcons;
+
+    const logoSrc =
+        theme === 'dark'
+            ? '/images/logo-white.svg'
+            : '/images/logo.svg';
+
+    const { openWindow } = useWindowStore();
+    const { toggleTheme } = useThemeStore();
     return (
         <nav>
             <div>
-                <img src="/images/logo.svg" alt="Logo" />
+                <img src={logoSrc} alt="Logo" />
                 <p className='font-bold'>Ayush's Portfolio</p>
 
                 <ul>
                     {navLinks.map(({ id, name, type }) => (
-                        <li key={id} onClick={()=> openWindow(type)}>
+                        <li key={id} onClick={() => openWindow(type)}>
                             <p>{name}</p>
                         </li>
                     ))}
@@ -26,13 +36,13 @@ const Navbar = () => {
 
             <div>
                 <ul>
-                    {navIcons.map(({ id, img }) => (
-                        <li 
+                    {themedNavIcons.map(({ id, img }) => (
+                        <li
                             key={id}
-                            onClick={() => img === '/icons/mode.svg' && toggleTheme()}
+                            onClick={() => (img === '/icons/mode.svg' || img === '/icons/mode-white.svg') && toggleTheme()}
                             style={{ cursor: img === '/icons/mode.svg' ? 'pointer' : 'default' }}
                         >
-                            <img src={img} alt={`icon-${id}`} className='icon-hover'/>
+                            <img src={img} alt={`icon-${id}`} className='icon-hover' />
                         </li>
                     ))}
                 </ul>

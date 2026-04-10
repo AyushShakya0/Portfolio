@@ -35,6 +35,25 @@ const navIcons = [
   },
 ];
 
+const navIcons_white = [
+  {
+    id: 1,
+    img: "/icons/wifi-white.svg",
+  },
+  {
+    id: 2,
+    img: "/icons/search-white.svg",
+  },
+  {
+    id: 3,
+    img: "/icons/user-white.svg",
+  },
+  {
+    id: 4,
+    img: "/icons/mode-white.svg",
+  },
+];
+
 const dockApps = [
   {
     id: "finder",
@@ -205,6 +224,7 @@ const gallery = [
 export {
   navLinks,
   navIcons,
+  navIcons_white,
   dockApps,
   blogPosts,
   techStack,

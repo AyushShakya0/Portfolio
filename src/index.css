@@ -64,6 +64,11 @@ body {
     @apply flex justify-between items-center backdrop-blur-3xl p-2 px-5 select-none transition-colors duration-300;
     background-color: var(--bg-secondary);
 
+    p {
+      @apply text-sm cursor-pointer hover:underline transition-all;
+      color: var(--text-primary);
+    }
+
     div {
       @apply flex items-center max-sm:w-full max-sm:justify-center gap-5;
 
