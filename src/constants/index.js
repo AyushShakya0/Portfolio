@@ -357,7 +357,7 @@ const WORK_LOCATION = {
           icon: "/images/gofood-logo.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
+          href: "https://gsap-cocktails-demo-seven.vercel.app/",
           position: "top-10 right-20",
         },
         {
