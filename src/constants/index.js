@@ -409,7 +409,7 @@ const WORK_LOCATION = {
           icon: "/images/NoteTaker.png",
           kind: "file",
           fileType: "url",
-          href: "https://note-taking-crud-sigma.vercel.app/",
+          href: "https://notetaker-sand-three.vercel.app/",
           position: "top-10 right-20",
         },
         {
